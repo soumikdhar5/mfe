@@ -4,7 +4,7 @@ const packageJson = require("../package.json")
 const commonWebpack = require('./webpack.common')
 
 const marketingProd = {
-    mode:'development',
+    mode:'production',
     output:{
         filename:'[name].[contenthash].js'
     },
