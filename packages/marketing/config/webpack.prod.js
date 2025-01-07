@@ -6,7 +6,8 @@ const commonWebpack = require('./webpack.common')
 const marketingProd = {
     mode:'production',
     output:{
-        filename:'[name].[contenthash].js'
+        filename:'[name].[contenthash].js',
+        publicPath: '/marketing/latest/'
     },
     plugins:[
         new ModuleFderationPlugin({
